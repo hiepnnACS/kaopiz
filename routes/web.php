@@ -29,8 +29,8 @@ Route::get('add-post', 'HomeController@addPost')->name('post.add');
 Route::post('insert', 'HomeController@insertPost')->name('post.save');
 
 // ORM
-Route::get('/search-user', 'UserController@searchUser')->name('search.user');
-Route::get('/result-user', 'UserController@resultSearch')->name('result.search.user');
+Route::get('/search-user', 'UserController@searchUser')->name('search.users');
+Route::get('/result-user', 'UserController@resultSearch')->name('result.search.users');
 
 
 Route::post('add-comment/{idPost}', 'HomeController@addComment')->name('add.comment');

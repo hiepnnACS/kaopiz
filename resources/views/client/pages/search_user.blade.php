@@ -1,4 +1,4 @@
-<form action="{{ route('result.search.user') }}" method="get" class="form-control">
+<form action="{{ route('result.search.users') }}" method="get" class="form-control">
 	@csrf
 	<label for="">Nhập vào ID User</label>
 	<input type="number" name="idUser">
@@ -36,5 +36,5 @@
 		@endif
 	</tbody>
 </table>
-
+a
 </form>

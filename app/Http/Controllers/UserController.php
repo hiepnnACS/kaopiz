@@ -22,7 +22,6 @@ class UserController extends Controller
     			    ->where('name', 'like', "%$name%")
     			    ->where('class', 'like', "%$class%")
     			    ->get();
-
-    	return view('client.pages.search_user', compact('result'));
+    	return view('client.pages.search_user', compact('result') );
     }
 }

@@ -30,6 +30,10 @@ Route::post('insert', 'HomeController@insertPost')->name('post.save');
 
 Route::post('add-comment/{idPost}', 'HomeController@addComment')->name('add.comment');
 
+
+// search role
+Route::get('search-role', 'UserController@searchRole');
+Route::get('result', 'UserController@resultRole')->name('result.role');
 // auth
 Auth::routes();
 
